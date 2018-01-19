@@ -24,27 +24,31 @@
                             <h1 id='list'>Ordered list</h1>
                             <ul>
                                 <li>
-                                    <h1>Heading 1</h1></li>
-                                <ul>
-                                    <li>
-                                        <h2>Heading 2</h2></li>
+                                    <h1>Heading 1</h1>
                                     <ul>
                                         <li>
-                                            <h3>Heading 3</h3></li>
+                                            <h2>Heading 2</h2>
+                                            <ul>
+                                                <li>
+                                                    <h3>Heading 3</h3></li>
+                                            </ul>
+                                        </li>
                                     </ul>
-                                </ul>
+                                </li>
                             </ul>
-                            <ol>
-                                <li type='1'>
-                                    <h4>Heading 4</h4></li>
-                                <ol>
-                                    <li type='A'>
-                                        <h5>Heading 5</h5></li>
-                                    <ol>
-                                        <li type='i'>
-                                            <h6>Heading 6</h6></li>
+                            <ol type='1'>
+                                <li>
+                                    <h4>Heading 4</h4>
+                                    <ol type="A">
+                                        <li>
+                                            <h5>Heading 5</h5>
+                                            <ol type="i">
+                                                <li>
+                                                    <h6>Heading 6</h6></li>
+                                            </ol>
+                                        </li>
                                     </ol>
-                                </ol>
+                                </li>
                             </ol>
                             <h3>Definition List</h3>
                             <dl> <dt>defines terms 1</dt>
@@ -66,9 +70,11 @@
                             <h2 id="table">Table</h2>
                             <table>
                                 <thead>
-                                    <th>Elements</th>
-                                    <th>Elements</th>
-                                    <th>Elements</th>
+                                    <tr>
+                                        <th>Elements</th>
+                                        <th>Elements</th>
+                                        <th>Elements</th>
+                                    </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
@@ -109,14 +115,14 @@ both           spaces and
                        </pre> </section>
                         <section>
                             <h3>Code</h3> <pre>
-<code>
+                                             <code>
  .wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-</code>
+                                            </code>
                     </pre> </section>
                         <hr>
                         <section>
