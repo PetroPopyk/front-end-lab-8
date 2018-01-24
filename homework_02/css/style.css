@@ -137,6 +137,6 @@ nav ul li:last-child{
     border-bottom: none;
 }
 /*task12*/
-input,textarea,button{
+input[type='text'],textarea,button{
     color: red!important;
 }
