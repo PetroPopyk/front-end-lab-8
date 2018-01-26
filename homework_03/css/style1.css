@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #dcbb9a; }
+
+#content {
+  margin: 5px auto;
+  width: 70%;
+  background: #ffffff;
+  padding: 20px;
+  color: black; }
+  #content h1 {
+    padding: 10px;
+    text-align: center;
+    color: #893c00; }
+  #content h2 {
+    color: #893c00;
+    margin: 20px 0 20px 0; }
+  #content .img-left {
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 5px double #893c00; }
+  #content .img-right {
+    float: right;
+    margin: 0 0 15px 15px;
+    border: 5px double #893c00; }
+  #content .brief {
+    float: left;
+    max-width: 40%;
+    background: #fadcba;
+    padding: 10px;
+    margin: 0 15px 15px 0;
+    color: black; }
+  #content a {
+    color: #3d70a1; }
+  #content table {
+    width: 100%;
+    margin-top: 15px;
+    background: inherit; }
+    #content table caption {
+      text-align: right; }
+    #content table th {
+      font-size: 1.2em;
+      background: #e0e0e0;
+      font-weight: normal;
+      text-transform: uppercase; }
+    #content table tr {
+      text-align: left;
+      height: 40px;
+      font-size: 1.1em; }
+  #content div p {
+    text-transform: uppercase;
+    color: silver;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  #content input[type='text'],
+  #content input[type='email'],
+  #content textarea {
+    height: 20px;
+    width: 100%; }
+  #content textarea {
+    height: 100px; }
+  #content input[type='submit'] {
+    height: 40px;
+    width: 200px;
+    background: #ffffff;
+    border: 1px solid #3d70a1;
+    color: #3d70a1;
+    font-size: 1.1em;
+    margin-top: 5px;
+    cursor: pointer; }

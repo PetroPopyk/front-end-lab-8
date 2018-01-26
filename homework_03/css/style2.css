@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: rgba(198, 238, 252, 0.53); }
+
+#content {
+  margin: 5px auto;
+  width: 70%;
+  background: #3b3b3b;
+  padding: 20px;
+  color: white; }
+  #content h1 {
+    padding: 10px;
+    text-align: center;
+    color: #fccd10; }
+  #content h2 {
+    color: #fccd10;
+    margin: 20px 0 20px 0; }
+  #content .img-left {
+    float: left;
+    margin: 0 15px 15px 0;
+    border: 5px double #fccd10; }
+  #content .img-right {
+    float: right;
+    margin: 0 0 15px 15px;
+    border: 5px double #fccd10; }
+  #content .brief {
+    float: left;
+    max-width: 40%;
+    background: #fff178;
+    padding: 10px;
+    margin: 0 15px 15px 0;
+    color: black; }
+  #content a {
+    color: #f5c70f; }
+  #content table {
+    width: 100%;
+    margin-top: 15px;
+    background: #677d01; }
+    #content table caption {
+      text-align: right; }
+    #content table th {
+      font-size: 1.2em;
+      background: #94a34e;
+      font-weight: normal;
+      text-transform: uppercase; }
+    #content table tr {
+      text-align: left;
+      height: 40px;
+      font-size: 1.1em; }
+  #content div p {
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  #content input[type='text'],
+  #content input[type='email'],
+  #content textarea {
+    height: 20px;
+    width: 100%; }
+  #content textarea {
+    height: 100px; }
+  #content input[type='submit'] {
+    height: 40px;
+    width: 200px;
+    background: #3b3b3b;
+    border: 1px solid #f5c70f;
+    color: #f5c70f;
+    font-size: 1.1em;
+    margin-top: 5px;
+    cursor: pointer; }

@@ -1,0 +1,103 @@
+$contentBackground: null !default;
+$bodyBackground: null !default;
+$contentTitleBorderColor: null !default;
+$contentBriefColor: null !default;
+$contentBriefTextColor: null !default;
+$contentTable1Color: null !default;
+$contentTable2Color: null !default;
+$contentButtonColor: null !default;
+$contentTextColor: null !default;
+$contentLabelColor: null !default;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $bodyBackground;
+}
+
+#content {
+    margin: 5px auto;
+    width: 70%;
+    background: $contentBackground;
+    padding: 20px;
+    color: $contentTextColor;
+    h1 {
+        padding: 10px;
+        text-align: center;
+        color: $contentTitleBorderColor;
+    }
+    h2 {
+        color: $contentTitleBorderColor;
+        margin: 20px 0 20px 0;
+    }
+    .img-left {
+        float: left;
+        margin: 0 15px 15px 0;
+        border: 5px double $contentTitleBorderColor;
+    }
+    .img-right {
+        float: right;
+        margin: 0 0 15px 15px;
+        border: 5px double $contentTitleBorderColor;
+    }
+    .brief {
+        float: left;
+        max-width: 40%;
+        background: $contentBriefColor;
+        padding: 10px;
+        margin: 0 15px 15px 0;
+        color: $contentBriefTextColor;
+    }
+    a {
+        color: $contentButtonColor;
+    }
+    table {
+        width: 100%;
+        margin-top: 15px;
+        background: $contentTable2Color;
+        caption {
+            text-align: right;
+        }
+        th {
+            font-size: 1.2em;
+            background: $contentTable1Color;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        tr {
+            text-align: left;
+            height: 40px;
+            font-size: 1.1em;
+        }
+    }
+    div {
+        p {
+            text-transform: uppercase;
+            color: $contentLabelColor;
+            font-size: 1.2em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+    }
+    input[type='text'],
+    input[type='email'],
+    textarea {
+        height: 20px;
+        width: 100%;
+    }
+    textarea {
+        height: 100px;
+    }
+    input[type='submit'] {
+        height: 40px;
+        width: 200px;
+        background: $contentBackground;
+        border: 1px solid $contentButtonColor;
+        color: $contentButtonColor;
+        font-size: 1.1em;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+}
