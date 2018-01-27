@@ -9,8 +9,8 @@ body {
   margin: 5px auto;
   width: 70%;
   background: #3b3b3b;
-  padding: 20px;
-  color: white; }
+  padding: 15px;
+  color: #ffffff; }
   #content h1 {
     padding: 10px;
     text-align: center;
@@ -30,17 +30,19 @@ body {
     float: left;
     max-width: 40%;
     background: #fff178;
-    padding: 10px;
+    padding: 15px;
     margin: 0 15px 15px 0;
-    color: black; }
+    color: #000000; }
   #content a {
     color: #f5c70f; }
   #content table {
     width: 100%;
     margin-top: 15px;
+    border-collapse: collapse;
     background: #677d01; }
     #content table caption {
-      text-align: right; }
+      text-align: right;
+      color: #000000; }
     #content table th {
       font-size: 1.2em;
       background: #94a34e;
@@ -49,10 +51,13 @@ body {
     #content table tr {
       text-align: left;
       height: 40px;
-      font-size: 1.1em; }
+      font-size: 1.1em;
+      border-bottom: 1px solid #bfbfbf; }
+      #content table tr:first-of-type {
+        border: none; }
   #content div p {
     text-transform: uppercase;
-    color: yellow;
+    color: #FFFF00;
     font-size: 1.2em;
     margin-top: 10px;
     margin-bottom: 5px; }

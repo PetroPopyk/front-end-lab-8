@@ -8,6 +8,10 @@ $contentTable2Color: null !default;
 $contentButtonColor: null !default;
 $contentTextColor: null !default;
 $contentLabelColor: null !default;
+$contentBlockMargin: 0 15px 15px 0;
+$contentBlockPadding: 15px;
+$contentTableBorderColor:lighten($contentBriefTextColor, 75%);
+$contentCaptionColor:#000000;
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +25,7 @@ body {
     margin: 5px auto;
     width: 70%;
     background: $contentBackground;
-    padding: 20px;
+    padding: $contentBlockPadding;
     color: $contentTextColor;
     h1 {
         padding: 10px;
@@ -34,7 +38,7 @@ body {
     }
     .img-left {
         float: left;
-        margin: 0 15px 15px 0;
+        margin: $contentBlockMargin;
         border: 5px double $contentTitleBorderColor;
     }
     .img-right {
@@ -46,8 +50,8 @@ body {
         float: left;
         max-width: 40%;
         background: $contentBriefColor;
-        padding: 10px;
-        margin: 0 15px 15px 0;
+        padding: $contentBlockPadding;
+        margin: $contentBlockMargin;
         color: $contentBriefTextColor;
     }
     a {
@@ -56,9 +60,11 @@ body {
     table {
         width: 100%;
         margin-top: 15px;
+        border-collapse: collapse;
         background: $contentTable2Color;
         caption {
             text-align: right;
+            color: $contentCaptionColor;
         }
         th {
             font-size: 1.2em;
@@ -70,6 +76,10 @@ body {
             text-align: left;
             height: 40px;
             font-size: 1.1em;
+            border-bottom: 1px solid $contentTableBorderColor;
+            &:first-of-type {
+                border: none;
+            }
         }
     }
     div {
