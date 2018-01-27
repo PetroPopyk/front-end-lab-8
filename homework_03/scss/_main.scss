@@ -3,12 +3,14 @@ $bodyBackground: null !default;
 $contentTitleBorderColor: null !default;
 $contentBriefColor: null !default;
 $contentBriefTextColor: null !default;
+$contentBriefPosition: null !default;
+$contentBriefSize: null !default;
+$contentBriefMargin: null !default; 
 $contentTable1Color: null !default;
 $contentTable2Color: null !default;
 $contentButtonColor: null !default;
 $contentTextColor: null !default;
 $contentLabelColor: null !default;
-$contentBlockMargin: 0 15px 15px 0;
 $contentBlockPadding: 15px;
 $contentTableBorderColor:lighten($contentBriefTextColor, 75%);
 $contentCaptionColor:#000000;
@@ -38,7 +40,7 @@ body {
     }
     .img-left {
         float: left;
-        margin: $contentBlockMargin;
+        margin: 0 15px 15px 0;
         border: 5px double $contentTitleBorderColor;
     }
     .img-right {
@@ -47,11 +49,11 @@ body {
         border: 5px double $contentTitleBorderColor;
     }
     .brief {
-        float: left;
-        max-width: 40%;
+        float: $contentBriefPosition;
+        max-width: $contentBriefSize;
         background: $contentBriefColor;
         padding: $contentBlockPadding;
-        margin: $contentBlockMargin;
+        margin: $contentBriefMargin;
         color: $contentBriefTextColor;
     }
     a {

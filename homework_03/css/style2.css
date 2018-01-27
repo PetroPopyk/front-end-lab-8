@@ -27,11 +27,11 @@ body {
     margin: 0 0 15px 15px;
     border: 5px double #fccd10; }
   #content .brief {
-    float: left;
-    max-width: 40%;
+    float: none;
+    max-width: 100%;
     background: #fff178;
     padding: 15px;
-    margin: 0 15px 15px 0;
+    margin: 0 0 15px 0;
     color: #000000; }
   #content a {
     color: #f5c70f; }
