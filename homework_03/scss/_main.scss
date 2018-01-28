@@ -5,7 +5,7 @@ $contentBriefColor: null !default;
 $contentBriefTextColor: null !default;
 $contentBriefPosition: null !default;
 $contentBriefSize: null !default;
-$contentBriefMargin: null !default; 
+$contentBriefMargin: null !default;
 $contentTable1Color: null !default;
 $contentTable2Color: null !default;
 $contentButtonColor: null !default;
@@ -89,8 +89,22 @@ body {
             text-transform: uppercase;
             color: $contentLabelColor;
             font-size: 1.2em;
-            margin-top: 10px;
+            margin-top: 5px;
             margin-bottom: 5px;
+        }
+        .left-field {
+            width: 49%!important;
+            float: left;
+            input {
+                margin-top: 5px;
+            }
+        }
+        .right-field {
+            width: 49%!important;
+            float: right;
+            input {
+                margin-top: 5px;
+            }
         }
     }
     input[type='text'],

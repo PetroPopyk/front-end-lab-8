@@ -59,8 +59,18 @@ body {
     text-transform: uppercase;
     color: #C0C0C0;
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px; }
+  #content div .left-field {
+    width: 49% !important;
+    float: left; }
+    #content div .left-field input {
+      margin-top: 5px; }
+  #content div .right-field {
+    width: 49% !important;
+    float: right; }
+    #content div .right-field input {
+      margin-top: 5px; }
   #content input[type='text'],
   #content input[type='email'],
   #content textarea {
