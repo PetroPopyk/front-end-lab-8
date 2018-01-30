@@ -70,9 +70,14 @@ body {
         }
         th {
             font-size: 1.2em;
+            border-right: 2px solid $contentBackground;
             background: $contentTable1Color;
             font-weight: normal;
             text-transform: uppercase;
+            padding-left: 10px;
+            &:last-child {
+                border-right: none;
+            }
         }
         tr {
             text-align: left;

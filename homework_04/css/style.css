@@ -56,8 +56,13 @@
 .container header nav ul li {
     display: inline-block;
     margin: 35px 0;
+    padding-bottom: 10px;
     margin-left: 40px;
     font-size: 12px;
+}
+
+.container header nav ul li:hover {
+    border-bottom: 2px solid #B7C8D9;
 }
 
 .container header nav ul li a {
@@ -80,8 +85,10 @@
     font-family: serif;
 }
 
-.container header h1 sup {
-    font-size: 20px;
+.container header h1:after {
+    content: 'tm';
+    vertical-align: super;
+    font-size: 17px;
     letter-spacing: 1px;
 }
 
@@ -197,4 +204,43 @@
     text-align: center;
     color: #fff;
     padding-top: 7px;
+}
+
+.container .article-footer {
+    background: #fff;
+    margin: 80px 130px 0 130px;
+    /*    display: flex;*/
+}
+
+.container .article-footer h2 {
+    display: inline-block;
+    width: 33%;
+    text-align: left;
+    padding-right: 30px;
+}
+
+.container .article-footer input,
+.container .article-footer button {
+    height: 40px;
+}
+
+.container .article-footer input[type='text'] {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 280px;
+    background: #f0f0f0;
+}
+
+.container .article-footer input[type='text']::placeholder {
+    padding-left: 10px;
+    color: black;
+    font-size: 12px;
+}
+
+.container .article-footer input[type='button'] {
+    width: 90px;
+    background: #000;
+    color: #9E9E9E;
+    border: none;
+    margin-left: -5px;
 }

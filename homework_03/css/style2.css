@@ -45,9 +45,13 @@ body {
       color: #000000; }
     #content table th {
       font-size: 1.2em;
+      border-right: 2px solid #3b3b3b;
       background: #94a34e;
       font-weight: normal;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-left: 10px; }
+      #content table th:last-child {
+        border-right: none; }
     #content table tr {
       text-align: left;
       height: 40px;
