@@ -1,0 +1,200 @@
+/*
+#B7C8D9
+#FFF
+#F3F3F3
+#A4A4A4
+#F0F0F0
+#000
+#343638
+#E8E8E8
+#9E9E9E
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    background: #B7C8D9;
+}
+
+.container {
+    width: 1100px;
+    /*    width: 85%;*/
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container header {
+    background-image: url(../img/apples.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 150px;
+    height: 550px;
+}
+
+.container .header-logo {
+    letter-spacing: 3px;
+    font-size: 13px;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 35px 0;
+}
+
+.container header nav {
+    float: right;
+}
+
+.container header nav ul {
+    list-style-type: none;
+}
+
+.container header nav ul li {
+    display: inline-block;
+    margin: 35px 0;
+    margin-left: 40px;
+    font-size: 12px;
+}
+
+.container header nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.container header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-top: 100px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.container header h1 span {
+    font-size: 65px;
+    font-family: serif;
+}
+
+.container header h1 sup {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.container header p {
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.container header button {
+    display: block;
+    margin: 130px auto;
+    cursor: pointer;
+    height: 40px;
+    width: 185px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 12px;
+}
+
+.container .article-header {
+    background: #fff;
+    padding: 80px 130px 130px 130px;
+}
+
+.container .article-header p:first-child {
+    float: left;
+    width: 49%;
+    font-size: 20px;
+}
+
+.container .article-header p:last-child {
+    float: right;
+    width: 49%;
+    font-size: 12px;
+}
+
+.container article {
+    background: #F3F3F3
+}
+
+.container article h2 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 80px;
+}
+
+.container article .gallery {
+    padding: 0 130px;
+    background: #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container article .gallery .img1 {
+    position: relative;
+    height: 214px;
+    width: 63%;
+    background-image: url(../img/sample.jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+.container article .gallery .img2 {
+    position: relative;
+    height: 214px;
+    width: 33%;
+    background-image: url(../img/sample2.jpg);
+    background-position: left;
+    background-size: cover;
+}
+
+.container article .gallery .img3 {
+    background-image: url(../img/sample3.jpg);
+    margin-top: 30px;
+}
+
+.container article .gallery h2 {
+    position: absolute;
+    padding: 0;
+    bottom: 0.1px;
+    margin: 15px;
+    color: #E8E8E8;
+    z-index: 2;
+    font-size: 14px;
+}
+
+.container article .gallery h2 span {
+    color: #A4A4A4;
+}
+
+.img1:after,
+.img2:after {
+    position: absolute;
+    content: "";
+    height: 20%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    bottom: 0.1px;
+}
+
+.container article .gallery .article-mark {
+    height: 30px;
+    width: 50px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    right: 0.1px;
+    margin: 15px;
+    border: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+}
