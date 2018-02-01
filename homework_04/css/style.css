@@ -1,15 +1,3 @@
-/*
-#B7C8D9
-#FFF
-#F3F3F3
-#A4A4A4
-#F0F0F0
-#000
-#343638
-#E8E8E8
-#9E9E9E
-*/
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 * {
     margin: 0;
@@ -21,8 +9,7 @@
 }
 
 .container {
-    width: 1100px;
-    /*    width: 85%;*/
+    width: 85%;
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
 }
@@ -32,17 +19,17 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 150px;
-    height: 550px;
+    padding: 2% 14%;
+    height: 38%;
 }
 
 .container .header-logo {
     letter-spacing: 3px;
-    font-size: 13px;
+    font-size: 1vw;
     display: inline-block;
     color: #fff;
     text-transform: uppercase;
-    margin: 35px 0;
+    margin: 40px 0;
 }
 
 .container header nav {
@@ -55,10 +42,10 @@
 
 .container header nav ul li {
     display: inline-block;
-    margin: 35px 0;
+    margin: 40px 0;
     padding-bottom: 10px;
     margin-left: 40px;
-    font-size: 12px;
+    font-size: 0.88vw;
 }
 
 .container header nav ul li:hover {
@@ -76,41 +63,40 @@
     letter-spacing: 7px;
     margin-top: 100px;
     color: #fff;
-    font-size: 36px;
+    font-size: 3vw;
     font-weight: 100;
 }
 
 .container header h1 span {
-    font-size: 65px;
+    font-size: 4.5vw;
     font-family: serif;
 }
 
 .container header h1:after {
     content: 'tm';
     vertical-align: super;
-    font-size: 17px;
+    font-size: 1.4vw;
     letter-spacing: 1px;
 }
 
 .container header p {
     text-align: center;
     color: #fff;
-    font-size: 12px;
+    font-size: 0.88vw;
 }
 
 .container header .anchor {
     display: block;
     margin: 130px auto;
     cursor: pointer;
-    height: 30px;
-    width: 185px;
+    width: 20%;
     background: rgba(0, 0, 0, 0.7);
-    border: 2px solid #fff;
-    font-size: 12px;
+    border: 1px solid #fff;
+    font-size: 0.88vw;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
+    line-height: 2;
 }
 
 .container header .anchor:hover {
@@ -119,35 +105,35 @@
 
 .container .article-header {
     background: #fff;
-    padding: 80px 130px 130px 130px;
+    padding: 8% 14% 14% 14%;
 }
 
 .container .article-header p:first-child {
     float: left;
     width: 49%;
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 
 .container .article-header p:last-child {
     float: right;
     width: 49%;
-    font-size: 12px;
+    font-size: 0.86vw;
 }
 
 .container article {
     background: #F3F3F3;
-    padding-bottom: 150px;
+    padding-bottom: 15%;
 }
 
 .container article h2 {
     text-align: center;
     font-weight: 300;
-    font-size: 18px;
-    padding: 80px;
+    font-size: 1.4vw;
+    padding: 9%;
 }
 
 .container article .gallery {
-    padding: 0 130px;
+    padding: 0 14%;
     background: #F3F3F3;
     display: flex;
     flex-wrap: wrap;
@@ -174,7 +160,7 @@
 
 .container article .gallery .img3 {
     background-image: url(../img/sample3.jpg);
-    margin-top: 30px;
+    margin-top: 3.5%;
 }
 
 .container article .gallery h2 {
@@ -184,7 +170,7 @@
     margin: 15px;
     color: #E8E8E8;
     z-index: 2;
-    font-size: 14px;
+    font-size: 1vw;
 }
 
 .container article .gallery h2 span {
@@ -195,23 +181,23 @@
 .img2:after {
     position: absolute;
     content: "";
-    height: 20%;
+    height: 50px;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
-    bottom: 0.1px;
+    bottom: 0.1%;
 }
 
 .container article .gallery .article-mark {
-    height: 30px;
-    width: 70px;
+    font-size: 1vw;
+    height: auto;
+    padding: 1%;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     right: 0.1px;
     margin: 15px;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     text-align: center;
     color: #fff;
-    padding-top: 7px;
 }
 
 .article-mark:hover {
@@ -221,48 +207,47 @@
 
 .container .article-footer {
     background: #fff;
-    margin: 80px 130px 0 130px;
-    /*    display: flex;*/
+    margin: 7% 14% 0 14%;
 }
 
 .container .article-footer h2 {
     display: inline-block;
-    width: 33%;
+    min-width: 33%;
     text-align: left;
-    padding-right: 30px;
+    padding-right: 3%;
 }
 
 .container .article-footer input,
 .container .article-footer button {
-    height: 40px;
+    height: 3vw;
 }
 
 .container .article-footer input[type='text'] {
     box-sizing: border-box;
     border: 1px solid black;
-    width: 280px;
+    width: 30%;
     background: #f0f0f0;
 }
 
 .container .article-footer input[type='text']::placeholder,
 .container footer div input[type="text"]::placeholder {
-    padding-left: 10px;
+    padding-left: 5%;
     color: black;
-    font-size: 12px;
+    font-size: 0.9vw;
 }
 
 .container .article-footer input[type='text']:focus,
 .container footer div input[type="text"]:focus {
-    padding-left: 10px;
+    padding-left: 5%;
     transition: 0.1s;
 }
 
 .container .article-footer input[type='button'] {
-    width: 90px;
+    width: 12%;
     background: #000;
     color: #9E9E9E;
     border: none;
-    margin-left: -5px;
+    margin-left: -1%;
     cursor: pointer;
 }
 
@@ -274,19 +259,19 @@
     background: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 130px 130px 50px 130px;
+    padding: 14% 14% 5% 14%;
     color: dimgrey;
 }
 
 .container .footer h3 {
-    margin-bottom: 15px;
+    margin-bottom: 20%;
     color: black;
-    font-size: 18px;
+    font-size: 1.2vw;
 }
 
 .container .footer div {
     width: 20%;
-    font-size: 14px;
+    font-size: 1vw;
     letter-spacing: 0.5px;
 }
 
@@ -313,20 +298,20 @@
 }
 
 .container .footer div input {
-    height: 40px;
+    height: 20%;
     box-sizing: border-box;
-    margin-top: 25px;
+    margin-top: 15%;
 }
 
 .container .footer div input[type="text"] {
-    width: 130px;
+    width: 65%;
     border: 1px solid #000;
     background: #f0f0f0;
 }
 
 .container .footer div input[type="button"] {
-    margin-left: -5px;
-    width: 70px;
+    margin-left: -3%;
+    width: 35%;
     background: #000;
     color: #9E9E9E;
     border: none;
@@ -338,21 +323,22 @@
 }
 
 hr {
-    margin: -35px 130px 25px 130px;
+    margin: -3.5% 14% 3% 14%;
     height: 2px;
     background: #f0f0f0;
     border: none;
 }
 
 footer nav {
-    height: 50px;
+    height: 20%;
     background: #fff;
+    padding: 0 14%;
+    padding-bottom: 2%;
 }
 
 footer nav span {
-    padding-left: 130px;
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.1vw;
     color: grey;
 }
 
@@ -367,7 +353,6 @@ footer nav ul li {
 }
 
 footer nav ul li:last-child {
-    padding-right: 130px;
     margin-right: 0;
 }
 
@@ -375,5 +360,5 @@ footer nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.1vw;
 }
