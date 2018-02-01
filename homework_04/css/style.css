@@ -61,7 +61,7 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 7px;
-    margin-top: 100px;
+    margin-top: 12%;
     color: #fff;
     font-size: 3vw;
     font-weight: 100;
@@ -87,7 +87,7 @@
 
 .container header .anchor {
     display: block;
-    margin: 130px auto;
+    margin: 15% auto;
     cursor: pointer;
     width: 20%;
     background: rgba(0, 0, 0, 0.7);
@@ -142,7 +142,7 @@
 
 .container article .gallery .img1 {
     position: relative;
-    height: 214px;
+    height: 14vw;
     width: 63%;
     background-image: url(../img/sample.jpg);
     background-position: left;
@@ -151,7 +151,7 @@
 
 .container article .gallery .img2 {
     position: relative;
-    height: 214px;
+    height: 14vw;
     width: 33%;
     background-image: url(../img/sample2.jpg);
     background-position: left;
@@ -181,7 +181,7 @@
 .img2:after {
     position: absolute;
     content: "";
-    height: 50px;
+    height: 23%;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
     bottom: 0.1%;
@@ -190,7 +190,7 @@
 .container article .gallery .article-mark {
     font-size: 1vw;
     height: auto;
-    padding: 1%;
+    padding: 0.8vw;
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
     right: 0.1px;
