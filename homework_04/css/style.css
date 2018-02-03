@@ -167,24 +167,15 @@
     position: absolute;
     padding: 0;
     bottom: 0.1px;
-    margin: 15px;
+    margin: 3%;
     color: #E8E8E8;
-    z-index: 2;
+    /*    z-index: 2;*/
     font-size: 1vw;
+    text-shadow: 1px 1px 2px #000, 0 0 25px #000, 0 0 5px #000;
 }
 
 .container article .gallery h2 span {
     color: #A4A4A4;
-}
-
-.img1:after,
-.img2:after {
-    position: absolute;
-    content: "";
-    height: 23%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    bottom: 0.1%;
 }
 
 .container article .gallery .article-mark {
@@ -238,7 +229,7 @@
 
 .container .article-footer input[type='text']:focus,
 .container footer div input[type="text"]:focus {
-    padding-left: 5%;
+    padding-left: 15px;
     transition: 0.1s;
 }
 
