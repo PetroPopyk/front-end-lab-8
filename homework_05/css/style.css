@@ -1,0 +1,231 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    header {
+        grid-area: header;
+        padding: 20px 200px 0;
+        display: flex;
+        align-items: center;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'header header header header header header' 'middle middle middle middle middle middle' 'footer footer footer footer footer footer';
+    }
+    
+    section {
+        grid-area: middle;
+        padding-top: 20px;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+    header ul li {
+        display: inline-block;
+    }
+    
+    header ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 25px;
+        font-size: 1.3vw;
+        color: #000;
+        font-weight: 500;
+    }
+    
+    header ul li a:hover {
+        color: #39c2d7;
+    }
+    
+    ul {
+        list-style-type: none;
+    }
+    
+    section .banner {
+        background-image: url(../img/banner.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+    }
+    
+    .banner h1 {
+        padding: 50px 200px;
+        color: #fff;
+        font-size: 3vw;
+        width: 60%;
+    }
+    
+    section .flex-container {
+        padding: 20px 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .flex-container .flex-item {
+        width: 32%;
+        padding: 10px;
+        background: silver;
+        cursor: pointer;
+    }
+    
+    .flex-container .flex-item:hover {
+        background: #39c2d7;
+    }
+    
+    .flex-container .flex-item {
+        margin-top: 2%;
+    }
+    
+    .flex-item img {
+        width: 100%;
+    }
+    
+    .flex-container h2 {
+        font-size: 1.3vw
+    }
+    
+    .flex-container p {
+        font-size: 1.15vw;
+        margin-top: 3px;
+    }
+    
+    footer ul {
+        display: flex;
+        padding: 2% 0;
+        background: #39c2d7;
+    }
+    
+    footer ul li {
+        margin-left: 2%;
+    }
+    
+    footer ul li:first-child {
+        margin: 0;
+        padding-left: 200px;
+    }
+    
+    footer ul li a,
+    footer li {
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.1vw;
+        font-weight: 550;
+    }
+    
+    footer ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    @media screen and (max-width: 900px) {
+        header {
+            display: block;
+            text-align: center;
+            padding: 20px 0 0;
+        }
+        header ul li a {
+            font-size: 1.6vw;
+        }
+        section .banner {
+            background-position: right;
+            height: 350px;
+        }
+        .banner h1 {
+            margin: 0 auto;
+            padding: 20px 0;
+            font-size: 2.8vw;
+            text-align: center;
+            width: 60%;
+        }
+        section .flex-container {
+            padding: 20px 20px;
+        }
+        .flex-container .flex-item {
+            width: 49%;
+        }
+        .flex-item img {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+        }
+        .flex-item p,
+        .flex-item h2 {
+            float: left;
+            font-size: 1.5vw;
+            margin-top: 5px;
+        }
+        footer ul {
+            display: block;
+            text-align: center;
+        }
+        footer ul li {
+            display: inline-block;
+        }
+        footer ul li:first-child {
+            padding: 0 5px;
+        }
+        footer ul li:last-child {
+            display: block;
+        }
+        footer ul li,
+        footer ul li a {
+            font-size: 1.5vw;
+            margin: 5px;
+        }
+    }
+    
+    @media (max-width: 575px) {
+        header {
+            padding: 20px 0 0;
+        }
+        header ul li {
+            display: block;
+            text-align: left;
+            padding: 5px;
+            background: silver;
+            border-bottom: 1px solid grey;
+        }
+        header ul li a {
+            font-size: 2.5vw;
+        }
+        section {
+            padding: 0;
+        }
+        section .banner {
+            height: 250px;
+            position: relative;
+        }
+        .banner h1 {
+            width: 90%;
+            text-align: left;
+            font-size: 4vw;
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            background: #39c2d7;
+            padding-left: 15px;
+        }
+        .flex-container .flex-item {
+            width: 100%;
+        }
+        .flex-item h2 {
+            font-size: 3.7vw;
+        }
+        .flex-item p {
+            font-size: 3.31vw;
+        }
+        footer ul li,
+        footer ul li a {
+            display: block;
+            font-size: 2.5vw;
+        }
+    }
