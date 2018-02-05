@@ -116,14 +116,13 @@
     
     footer ul li a,
     footer li {
-        text-decoration: none;
         color: #fff;
         font-size: 1.1vw;
         font-weight: 550;
     }
     
     footer ul li a:hover {
-        text-decoration: underline;
+        text-decoration: none;
     }
     
     @media screen and (max-width: 900px) {
