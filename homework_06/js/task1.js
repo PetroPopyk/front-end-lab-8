@@ -19,7 +19,7 @@ else if (side_1 == side_2 || side_1 == side_3 || side_2 == side_3) {
     triangle_type = 'Isosceles';
     console.log('Type of triangle is ' + triangle_type + ' and square is ' + triangle_square);
 }
-else if (Math.pow(side_1, 2) == Math.pow(side_2, 2) + Math.pow(side_3, 2)) {
+else if (Math.pow(side_1, 2) == Math.pow(side_2, 2) + Math.pow(side_3, 2) || Math.pow(side_2, 2) == Math.pow(side_1, 2) + Math.pow(side_3, 2) || Math.pow(side_3, 2) == Math.pow(side_1, 2) + Math.pow(side_2, 2)) {
     triangle_type = 'Right triangle';
     console.log('Type of triangle is ' + triangle_type + ' and square is ' + triangle_square);
 }
