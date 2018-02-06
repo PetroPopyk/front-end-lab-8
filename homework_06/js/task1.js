@@ -5,7 +5,7 @@ var side_3 = parseFloat(prompt("Enter value of first third of triangle: "));
 var triangle_type = '';
 var half_p = (side_1 + side_2 + side_3) / 2;
 var triangle_square = (Math.sqrt(half_p * (half_p - side_1) * (half_p - side_2) * (half_p - side_3))).toFixed(2);
-if (side_1 < 0 || side_2 < 0 || side_3 < 0) {
+if (side_1 < 0 || side_2 < 0 || side_3 < 0 || isNaN(side_1) == true || isNaN(side_2) == true || isNaN(side_3) == true) {
     console.log('incorect input');
 }
 else if (side_1 + side_2 <= side_3 || side_1 + side_3 <= side_2 || side_2 + side_3 <= side_1) {
