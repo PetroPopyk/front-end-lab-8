@@ -3,6 +3,3 @@
          func(arr[i]);
      };
  };
- forEach(function (el) {
-     console.log(el);
- }, [0, 5, 3]);

@@ -1,12 +1,7 @@
- function forEach(func, arr) {
-     for (var i = 0; i < arr.length; i++) {
-         func(arr[i]);
-     };
- };
-
- function getTransformedArray(func, arr) {
-     forEach(func, arr);
- }
- getTransformedArray(function increment(item) {
-     console.log(item + 1);
- }, [1, 5, 3]);
+function getTransformedArray(func, arr) {
+    var arr_2 = [];
+    forEach(item => {
+        arr_2.concat(func(item));
+    }, arr);
+    return arr_2;
+};
