@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+.accordion {
+    display: block;
+    margin: 15px;
+}
+
+span:hover,
+p:hover {
+    background: silver;
+    cursor: pointer;
+}
+
+.empty:hover {
+    cursor: auto;
+    background: white;
+}
+
+.panel {
+    margin: 5px 40px;
+    display: none;
+    overflow: hidden;
+}
+
+.child_2 {
+    margin: 0;
+}
+
+.folder::before {
+    content: '';
+    background: url(material-icons/ic_folder_black_24px.svg);
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+    float: left;
+}
+
+.file::before {
+    content: '';
+    background: url(material-icons/ic_insert_drive_file_black_24px.svg);
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+    float: left;
+}
